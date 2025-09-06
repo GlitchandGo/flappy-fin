@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Flappy Fin</title>
+  <meta name="viewport" content="width=400, user-scalable=no"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +12,34 @@
     <div id="scoreboard">
       <span id="score">0</span>
       <span id="highscore">Best: 0</span>
+      <span id="difficulty-label"></span>
+    </div>
+    <!-- Pick Fin Screen -->
+    <div id="fin-select-menu">
+      <h2>Pick your Fin</h2>
+      <div id="fin-choices">
+        <button class="fin-btn" data-fin="schoolfin">
+          <img src="schoolfin.jpg" alt="School Fin">
+          <div>School Fin</div>
+        </button>
+        <button class="fin-btn" data-fin="poolfin">
+          <img src="fin.jpg" alt="Pool Fin" id="poolfin-img">
+          <div>Pool Fin</div>
+          <div class="locked-label" id="poolfin-locked">🔒</div>
+        </button>
+      </div>
+    </div>
+    <!-- Difficulty Menu -->
+    <div id="difficulty-menu">
+      <h2>Select Difficulty</h2>
+      <button class="diff-btn" data-diff="easy">Easy</button>
+      <button class="diff-btn" data-diff="medium">Medium</button>
+      <button class="diff-btn" data-diff="hard">Hard</button>
+      <button class="diff-btn locked" data-diff="killer" disabled title="Locked for now!">Fin Killer 🔒</button>
+      <button id="back-to-fin" class="menu-nav-btn">Go Back</button>
     </div>
     <button id="restart" style="display:none;">Restart</button>
+    <button id="go-back" style="display:none;">Go Back</button>
   </div>
   <script src="game.js"></script>
 </body>
