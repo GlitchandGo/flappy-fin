@@ -19,7 +19,7 @@ const PIPE_COLOR_GRADIENT = ['#186a21', '#57e14f', '#186a21'];
 
 const BIRD_RADIUS = 26;
 const BIRD_X = 90;
-const BIRD_IMG_SRC = "fin.png"; // <-- Replace with your friend's picture!
+const BIRD_IMG_SRC = "fin.jpg"; // <-- Replace with your friend's picture!
 
 // --- GAME STATE ---
 let pipes = [];
